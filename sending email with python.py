@@ -1,18 +1,21 @@
 import smtplib
 
+# setting up server first
 host = "smtp.gmail.com"
 port = 587
+
+# declarnig sender's credential
 username = "aoen143@gmail.com"
 password = "mypasswordhere"
 
-
+# recipient's email addresds
 from_email = username
 to_list = ['aoen143@gmail.com', 'manishgupta3950@gmail.com']
 
 # Email Connection to the server
 email_conn = smtplib.SMTP(host, port)
 
-email_conn.ehlo()
+email_conn.ehlo()  # can be ommited
 
 # Creating a secured layer
 email_conn.starttls()
