@@ -17,14 +17,14 @@ message['To'] = password
 text = """\
 Hi,
 How are you?
-Real Python has many great tutorials:
-www.realpython.com"""
+python docs has many great tutorials:
+www.abc.com"""
 html = """\
 <html>
   <body>
     <p>Hi,<br>
        How are you?<br>
-       <a href="http://www.realpython.com">Real Python</a> 
+       <a href="http://www.abc.com">Python Docs</a> 
        has many great tutorials.
     </p>
   </body>
@@ -53,42 +53,3 @@ with smtplib.SMTP_SSL(host, port, context=context) as server:
     server.sendmail(sender_email, receiver_email)
 
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
